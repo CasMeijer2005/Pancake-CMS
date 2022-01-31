@@ -1,2 +1,2 @@
-# Projectweek-P3-CMS
-Dit is de repository voor de projectweek over een eigen CMS maken voor Periode 3.
+# Pancake-Frameworks
+This is a repository for a schoolproject. We have to make a framework/CMS. 
