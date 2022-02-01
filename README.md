@@ -1,2 +1,2 @@
-# Pancake-Frameworks
-This is a repository for a schoolproject. We have to make a framework/CMS. 
+# Pancake-CMS
+This is a repository for a school project. We have to make a CMS. 
