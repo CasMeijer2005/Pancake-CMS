@@ -1,0 +1,30 @@
+#box {
+    box-shadow: 3px 8px 16px #888888;
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+h1 {
+    font-family: Arial;
+    text-align: center;
+    padding-top: 10px;
+}
+h2 {
+    font-family: Arial;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    font-family: Arial;
+    margin-left: 37.5%;
+    color: black;
+}
+#checkmark {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
