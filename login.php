@@ -4,7 +4,6 @@ session_start();
 include("connection.php");
 include("functions.php");
 
-
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //something was posted
     $user_name = $_POST['user_name'];
@@ -30,15 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
         }
     } else {
-
         echo "wrong username or password!";
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,20 +42,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/login.css">
 </head>
-
 <body>
     <form method="POST">
-        <input type="text" class="input" id="user_name" name="user_name" placeholder="Username">
-        <input type="password" class="input" id="password" name="password" placeholder="Password">
-        <input type="submit" id="submit" value="Login">
+        <input type="text" class="input" id="user_name" name="user_name" placeholder="Username" required> <!-- Het username veld -->
+        <input type="password" class="input" id="password" name="password" placeholder="Password" required> <!-- Het wachtwoord veld -->
+        <input type="submit" id="submit" value="Login"> <!-- De submit knop -->
     </form>
-<<<<<<< Updated upstream
-    <img src="assets/img/google.png" id="google" onclick="google()">
-    <a href="signup.php" id="signup">Signup here</a>
+    <img src="assets/img/google.png" id="google" onclick="google()">  <!-- Sign in with google foto -->
+    <a href="signup.php" id="signup">Signup here</a>  <!-- Redirect naar signup.php -->
     <script src="assets/js/login.js"></script>
-=======
-    <a href="signup.php">Singup here</a>
->>>>>>> Stashed changes
 </body>
-
 </html>

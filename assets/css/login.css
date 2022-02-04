@@ -1,4 +1,4 @@
-body::after {
+body::after {  /* De achtergrond van de pagina */
   content: "";
   background: url("https://i.ibb.co/vhSbfgv/pannenkoek.png");
   opacity: 0.5;
@@ -9,9 +9,9 @@ body::after {
   position: absolute;
   z-index: -1;
 }
-#user_name {
-  display: flex;
-  margin-left: 45%;
+#user_name {  /* Gebruikersnaam inlog veld */
+  display: block;
+  margin: 0 auto;
   width: 217px;
   font-family: "Arial";
   padding: 10px;
@@ -21,9 +21,9 @@ body::after {
   border-radius: 20px;
   margin-top: 50px;
 }
-#password {
-  display: flex;
-  margin-left: 45%;
+#password {  /* Wachtwoord inlog veld */
+  display: block;
+  margin: 0 auto;
   width: 217px;
   font-family: "Arial";
   padding: 10px;
@@ -33,8 +33,9 @@ body::after {
   border-radius: 20px;
   margin-top: 25px;
 }
-#submit {
-  margin-left: 45%;
+#submit {  /* Submit knop */
+  margin: 0 auto;
+  display: block;
   margin-top: 125px;
   padding: 10px;
   border: none;
@@ -44,8 +45,8 @@ body::after {
   border-radius: 5px;
   width: 10.5%;
 }
-#signup {
-  margin-left: 47%;
+#signup { /* Sign up redirect */
+  text-align: center;
   padding: 10px;
   border: none;
   background-color: rgb(4, 153, 4);
@@ -54,12 +55,14 @@ body::after {
   text-decoration: none;
   font-family: "Arial";
   font-size: 17px;
-  transform: translateY(20px);
-  display: inline;
-}
-#google {
+  transform: translateY(-10px);
   display: block;
-  margin-left: 45.2%;
+  margin: auto;
+  width: 100px;
+}
+#google {  /* Google foto */
+  display: block;
+  margin: 0 auto;
   margin-bottom: 50px;
   margin-top: 25px;
 }
