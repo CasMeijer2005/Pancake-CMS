@@ -29,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Sign up</title>
 </head>
 
@@ -40,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="submit" id="submit" value="sign up">
     </form>
     <img src="assets/img/google.png" id="google" onclick="google()">
-    <a href="signup.php" id="signup">login here</a>
+    <a href="login.php" id="signup">login here</a>
     <script src="assets/js/login.js"></script>
 </body>
 
