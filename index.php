@@ -1,6 +1,7 @@
 <?php
 //Hier start de session//
 session_start();
+include("assets/database/database.php");
 include("connection.php");
 include("functions.php");
 

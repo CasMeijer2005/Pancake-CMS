@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="submit" id="submit" value="sign up">
     </form>
     <img src="assets/img/google.png" id="google" onclick="google()">
-    <a href="signup.php" id="signup">login here</a>
+    <a href="login.php" id="signup">login here</a>
     <script src="assets/js/login.js"></script>
 </body>
 
