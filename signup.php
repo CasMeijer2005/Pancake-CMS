@@ -6,7 +6,7 @@ include("functions.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //SOMETHING WAS POSTED
     $user_name = $_POST['user_name'];
-    $password = $_POST['password'];
+    $password = hash("sha256", $_POST['password']);
 
     if (!empty($user_name) && !empty($password)  && !is_numeric($user_name)) {
         //save to database
