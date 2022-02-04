@@ -30,11 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <form method="POST">
                 <label id="usernameTaken"></label>
                 <input type="text" class="input" id="user_name" name="user_name" placeholder="Username">
+                <input type="email" class="input" id="email" name="email" placeholder="Email" required>
                 <input type="password" class="input" id="password" name="password" placeholder="Password">
-                <input type="submit" id="submit" value="sign up">
+                <input type="submit" id="submit" value="Sign up">
             </form>
             <img src="assets/img/google.png" id="google" onclick="google()">
-            <a href="login.php" id="signup">login here</a>
+            <a href="login.php" id="signup">Login here</a>
             <script src="assets/js/login.js"></script>
         </body>';
 
@@ -73,12 +74,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body>
     <form method="POST">
         <label id="usernameTaken"></label>
-        <input type="text" class="input" id="user_name" name="user_name" placeholder="Username">
-        <input type="password" class="input" id="password" name="password" placeholder="Password">
-        <input type="submit" id="submit" value="sign up">
+        <input type="text" id="user_name" name="user_name" placeholder="Username" required> <!-- Het username veld -->
+        <input type="email" class="input" id="email" name="email" placeholder="Email" required> <!-- Het email veld -->
+        <input type="password" class="input" id="password" name="password" placeholder="Password" required> <!-- Het wachtwoord veld -->
+        <input type="password" class="input" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required> <!-- Bekijkt of het wachtwoord hetzelfde is met het wachtwoord veld hierboven -->
+        <input type="submit" id="submit" value="Sign up">
     </form>
     <img src="assets/img/google.png" id="google" onclick="google()">
-    <a href="login.php" id="signup">login here</a>
+    <a href="login.php" id="signup">Login here</a>
     <script src="assets/js/login.js"></script>
 </body>
 

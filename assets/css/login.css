@@ -21,7 +21,8 @@ body::after {  /* De achtergrond van de pagina */
   border-radius: 20px;
   margin-top: 50px;
 }
-#password {  /* Wachtwoord inlog veld */
+
+.input { /* De styling van de .input telt voor het email veld, het password veld en het confirm password veld */
   display: block;
   margin: 0 auto;
   width: 217px;

@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="submit" id="submit" value="Login"> <!-- De submit knop -->
     </form>
     <img src="assets/img/google.png" id="google" onclick="google()">  <!-- Sign in with google foto -->
-    <p id="signuptext"></p>
+    <p id="signuptext"></p> <!-- De <p> laat "This feature is under maintenance" zien -->
     <a href="signup.php" id="signup">Sign up here</a>  <!-- Redirect naar signup.php -->
     <script src="assets/js/login.js"></script>
 </body>
