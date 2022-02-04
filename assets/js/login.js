@@ -1,3 +1,3 @@
 function google() {
-    alert("This feature is currently under maintenance");
+    document.getElementById("signuptext").innerHTML = "This feature is currently under maintenance";
 }

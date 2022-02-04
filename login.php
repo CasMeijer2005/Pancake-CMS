@@ -50,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="submit" id="submit" value="Login"> <!-- De submit knop -->
     </form>
     <img src="assets/img/google.png" id="google" onclick="google()">  <!-- Sign in with google foto -->
+    <p id="signuptext"></p>
     <a href="signup.php" id="signup">Sign up here</a>  <!-- Redirect naar signup.php -->
     <script src="assets/js/login.js"></script>
 </body>

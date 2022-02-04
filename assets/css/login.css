@@ -63,6 +63,12 @@ body::after {  /* De achtergrond van de pagina */
 #google {  /* Google foto */
   display: block;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 25px;
+}
+#signuptext {
+  text-align: center; 
+  vertical-align: middle;
+  transform: translateY(-20px);
+  font-family: "Arial";
 }
