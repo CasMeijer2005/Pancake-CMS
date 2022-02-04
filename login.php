@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/pancake.png">
 </head>
 <body>
     <form method="POST">

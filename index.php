@@ -17,6 +17,7 @@ header('Refresh: 3; test.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login geslaagd!</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/pancake.png">
 </head>
 
 <body>
