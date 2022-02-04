@@ -5,13 +5,13 @@ include("connection.php");
 include("functions.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    //something was posted
+    // Something was posted
     $user_name = $_POST['user_name'];
     $password = $_POST['password'];
 
     if (!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
 
-        //read from database
+        // Read from database
         $query = "select * from users where user_name = '$user_name' limit 1";
         $result = mysqli_query($con, $query);
 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
         }
     } else {
-        echo "wrong username or password!";
+        echo "Wrong username or password!";
     }
 }
 ?>
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="submit" id="submit" value="Login"> <!-- De submit knop -->
     </form>
     <img src="assets/img/google.png" id="google" onclick="google()">  <!-- Sign in with google foto -->
-    <a href="signup.php" id="signup">Signup here</a>  <!-- Redirect naar signup.php -->
+    <a href="signup.php" id="signup">Sign up here</a>  <!-- Redirect naar signup.php -->
     <script src="assets/js/login.js"></script>
 </body>
 </html>

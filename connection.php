@@ -1,5 +1,5 @@
 <?php
-//connection naar database//
+// Connection naar database
 $bdhost = "localhost";
 $bduser = "root";
 $bdpass = "";
