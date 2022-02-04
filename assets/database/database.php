@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE pancakecms";
+$sql = "CREATE DATABASE IF NOT EXISTS pancakecms";
 
 // Check creation of database
 if ($conn->query($sql) === TRUE) {
@@ -28,7 +28,7 @@ if ($conn->query($sql) === TRUE) {
 $conn = new mysqli($hostname, $username, $password, $dbname);
 
 // Create table
-$sql = "CREATE TABLE users (
+$sql = "CREATE TABLE IF NOT EXISTS users (
     id bigint(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `user_id` bigint(20) NOT NULL,
     `user_name` VARCHAR(100) NOT NULL,
