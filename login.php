@@ -57,4 +57,5 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <a href="signup.php" id="signup">Signup here</a>
     <script src="assets/js/login.js"></script>
 </body>
+
 </html>

@@ -23,18 +23,24 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
     <title>Sign up</title>
 </head>
+
 <body>
-    <form method="post">
-        <input type="text" name="user_name" placeholder="user name">
-        <input type="password" name="password" placeholder="password">
-        <input type="submit" value="signup here" href="login.php">
+    <form method="POST">
+        <input type="text" class="input" id="user_name" name="user_name" placeholder="Username">
+        <input type="password" class="input" id="password" name="password" placeholder="Password">
+        <input type="submit" id="submit" value="sign up">
     </form>
-    <a href="login.php">Login here</a>
+    <img src="assets/img/google.png" id="google" onclick="google()">
+    <a href="signup.php" id="signup">login here</a>
+    <script src="assets/js/login.js"></script>
 </body>
+
 </html>
