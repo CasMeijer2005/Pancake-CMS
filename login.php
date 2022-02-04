@@ -53,13 +53,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="password" class="input" id="password" name="password" placeholder="Password">
         <input type="submit" id="submit" value="Login">
     </form>
-<<<<<<< Updated upstream
-    <img src="assets/img/google.png" id="google" onclick="google()">
-    <a href="signup.php" id="signup">Signup here</a>
-    <script src="assets/js/login.js"></script>
-=======
-    <a href="signup.php">Singup here</a>
->>>>>>> Stashed changes
+    <<<<<<< Updated upstream <img src="assets/img/google.png" id="google" onclick="google()">
+        <a href="signup.php" id="signup">Signup here</a>
+        <script src="assets/js/login.js"></script>
+        =======
+        <a href="signup.php">Singup here</a>
+        >>>>>>> Stashed changes
 </body>
 
 </html>
