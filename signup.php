@@ -16,7 +16,31 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $count = mysqli_num_rows($result);
 
     if($count > 0) {
-        echo '<label class="input">Username already taken!</label> <br>';
+        echo '<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="assets/css/login.css">
+            <title>Sign up</title>
+        </head>
+        
+        <body>
+            <form method="POST">
+                <label id="usernameTaken"></label>
+                <input type="text" class="input" id="user_name" name="user_name" placeholder="Username">
+                <input type="password" class="input" id="password" name="password" placeholder="Password">
+                <input type="submit" id="submit" value="sign up">
+            </form>
+            <img src="assets/img/google.png" id="google" onclick="google()">
+            <a href="login.php" id="signup">login here</a>
+            <script src="assets/js/login.js"></script>
+        </body>';
+
+        echo "<script>
+                alert('Username $user_name already taken!');
+            </script>";
 
         return false;
     }
