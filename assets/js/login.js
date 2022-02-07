@@ -1,7 +1,9 @@
+// Word aangeroepen als er wordt gedrukt op de "google sign in"
 function google() {
     document.getElementById("signuptext").innerHTML = "This feature is currently under maintenance";
 }
 
+// Wachtwoord herhalen en checken
 var password = document.getElementById("password")
   , confirm_password = document.getElementById("confirm_password");
 
@@ -13,5 +15,6 @@ function validatePassword(){
   }
 }
 
+// Roept de functies aan
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
