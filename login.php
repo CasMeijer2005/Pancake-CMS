@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         // Read from database
         $query = "select * from users where user_name = '$user_name' limit 1";
         $result = mysqli_query($con, $query);
-        
+
         // Checked of de username al bestaat
         if ($result) {
             if ($result && mysqli_num_rows($result) > 0) {
@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <!-- Einde PHP, Start HTML -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,15 +49,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="icon" type="image/x-icon" href="assets/img/pancake.png">
 </head>
+
 <body>
     <form method="POST">
         <input type="text" class="input" id="user_name" name="user_name" placeholder="Username" required> <!-- Het username veld -->
         <input type="password" class="input" id="password" name="password" placeholder="Password" required> <!-- Het wachtwoord veld -->
-        <input type="submit" id="submit" value="Login"> <!-- De submit knop -->
+        <input type="submit" id="submit" value="Login" href="index.php"> <!-- De submit knop -->
     </form>
-    <img src="assets/img/google.png" id="google" onclick="google()">  <!-- Sign in with google foto -->
+    <img src="assets/img/google.png" id="google" onclick="google()"> <!-- Sign in with google foto -->
     <p id="signuptext"></p> <!-- De <p> laat "This feature is under maintenance" zien -->
-    <a href="signup.php" id="signup">Sign up here</a>  <!-- Redirect naar signup.php -->
+    <a href="signup.php" id="signup">Sign up here</a> <!-- Redirect naar signup.php -->
     <script src="assets/js/login.js"></script>
 </body>
+
 </html>
