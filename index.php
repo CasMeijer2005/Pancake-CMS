@@ -1,4 +1,4 @@
-<?php
+<?php // Begin PHP
 // Hier start de session
 session_start();
 include("assets/database/database.php");
@@ -8,8 +8,7 @@ include("functions.php");
 // Checked of de user is ingelogd
 $user_data = check_login($con);
 ?>
-
-<!-- Start HTML -->
+<!-- Einde PHP, Start HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,10 +24,11 @@ $user_data = check_login($con);
 <body>
     <div id="box">
         <!-- Login succes -->
-        <img src="assets/img/checkmark.png" id="checkmark">
+        <img src="assets/img/checkmark.png" id="checkmark"> <!-- Het groene vinkje-->
         <h1>Login succesful!</h1>
-        <h2>Welcome <?php echo $user_data["user_name"] ?></h2>
+        <h2>Welcome <?php echo $user_data["user_name"] ?></h2> <!-- ["user_name"] is de username -->
     </div>
 </body>
 
 </html>
+<!-- Einde HTML -->
