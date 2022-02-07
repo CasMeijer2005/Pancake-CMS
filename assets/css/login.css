@@ -67,7 +67,7 @@ body::after {  /* De achtergrond van de pagina */
   margin-bottom: 30px;
   margin-top: 25px;
 }
-#signuptext {
+#signuptext { /* De tekst die "This feature is currently under maintenance" laat zien*/
   text-align: center; 
   vertical-align: middle;
   transform: translateY(-20px);
