@@ -1,4 +1,4 @@
-<?php
+<?php // Start PHP
 // Sessie starten
 session_start();
 include("connection.php");
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $count = mysqli_num_rows($result);
 
-    // Start HTML
+    // Laat het volgende HTML regels zien als de username die is ingevuld al gebruikt word
     if ($count > 0) {
         echo '<html lang="en">
 
@@ -64,7 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 
 ?>
-
 <!-- Einde PHP, Start HTML -->
 <!DOCTYPE html>
 <html lang="en">
@@ -78,18 +77,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 
 <body>
-    <form method="POST">
+    <form method="POST"> <!-- Begin Form -->
         <label id="usernameTaken"></label>
         <input type="text" id="user_name" name="user_name" placeholder="Username" required> <!-- Het username veld -->
         <input type="email" class="input" id="email" name="user_email" placeholder="Email" required> <!-- Het email veld -->
         <input type="password" class="input" id="password" name="password" placeholder="Password" required> <!-- Het wachtwoord veld -->
         <input type="password" class="input" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required> <!-- Bekijkt of het wachtwoord hetzelfde is met het wachtwoord veld hierboven -->
-        <input type="submit" id="submit" value="Sign up">
-    </form>
-    <img src="assets/img/google.png" id="google" onclick="google()">
+        <input type="submit" id="submit" value="Sign up"> <!-- De submit knop -->
+    </form> <!-- Einde Form -->
+    <img src="assets/img/google.png" id="google" onclick="google()"> <!-- Sign in with google foto -->
     <p id="signuptext"></p> <!-- De <p> laat "This feature is under maintenance" zien -->
-    <a href="login.php" id="signup">Login here</a>
+    <a href="login.php" id="signup">Login here</a> <!-- Redirect naar login.php -->
     <script src="assets/js/login.js"></script>
 </body>
 
 </html>
+<!-- Einde HTML -->
