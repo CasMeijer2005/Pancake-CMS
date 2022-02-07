@@ -1,9 +1,10 @@
 <?php
-
+// Sessie starten
 session_start();
 include("connection.php");
 include("functions.php");
 
+// Zet request method op post
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //SOMETHING WAS POSTED
     $user_name = $_POST['user_name'];
@@ -16,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $count = mysqli_num_rows($result);
 
+    // Start HTML
     if ($count > 0) {
         echo '<html lang="en">
 
@@ -39,7 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <a href="login.php" id="signup">Login here</a>
             <script src="assets/js/login.js"></script>
         </body>';
-
+    
+        // Geeft aan of de username al in gebruik is
         echo "<script>
                 alert('Username $user_name already taken!');
             </script>";
@@ -61,6 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 
 ?>
+
+<!-- Einde PHP, Start HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
