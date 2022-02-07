@@ -1,9 +1,12 @@
 <?php
+// Start sessie
 session_start();
 
+// Runt connection.php en function.php voordat de pagina wordt geladen
 include("connection.php");
 include("functions.php");
 
+// Method naar POST
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // Something was posted
     $user_name = $_POST['user_name'];
@@ -14,7 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         // Read from database
         $query = "select * from users where user_name = '$user_name' limit 1";
         $result = mysqli_query($con, $query);
-
+        
+        // Checked of de username al bestaat
         if ($result) {
             if ($result && mysqli_num_rows($result) > 0) {
 
@@ -33,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 }
 ?>
+<!-- Einde PHP, Start HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
