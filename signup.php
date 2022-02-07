@@ -82,6 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="submit" id="submit" value="Sign up">
     </form>
     <img src="assets/img/google.png" id="google" onclick="google()">
+    <p id="signuptext"></p> <!-- De <p> laat "This feature is under maintenance" zien -->
     <a href="login.php" id="signup">Login here</a>
     <script src="assets/js/login.js"></script>
 </body>
