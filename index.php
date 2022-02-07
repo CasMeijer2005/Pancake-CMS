@@ -9,6 +9,7 @@ $user_data = check_login($con);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@ $user_data = check_login($con);
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="icon" type="image/x-icon" href="assets/img/pancake.png">
 </head>
+
 <body>
     <div id="box">
         <img src="assets/img/checkmark.png" id="checkmark">
@@ -24,4 +26,5 @@ $user_data = check_login($con);
         <h2>Welcome <?php echo $user_data["user_name"] ?></h2>
     </div>
 </body>
+
 </html>
