@@ -32,6 +32,7 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
     id bigint(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `user_id` bigint(20) NOT NULL,
     `user_name` VARCHAR(100) NOT NULL,
+    `user_email` VARCHAR(100) NOT NULL,
     `password` VARCHAR(100) NOT NULL,
     `date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
@@ -45,5 +46,3 @@ if ($conn->query($sql) === TRUE) {
 
 // Close connection
 $conn->close();
-
-?>

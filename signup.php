@@ -7,6 +7,7 @@ include("functions.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //SOMETHING WAS POSTED
     $user_name = $_POST['user_name'];
+    $user_email = $_POST['user_email'];
     $password = hash("sha256", $_POST['password']);
 
     $check_duplicate_username = "SELECT `user_name` FROM `users` WHERE `user_name` = '$user_name' ";
@@ -15,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $count = mysqli_num_rows($result);
 
-    if($count > 0) {
+    if ($count > 0) {
         echo '<html lang="en">
 
         <head>
@@ -46,10 +47,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         return false;
     }
 
-    if (!empty($user_name) && !empty($password)  && !is_numeric($user_name)) {
+    if (!empty($user_name) && !empty($password) && !empty($user_email) && !is_numeric($user_name)) {
         //save to database
         $user_id = random_num(20);
-        $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
+        $query = "insert into users (user_id,user_name,user_email,password) values ('$user_id','$user_name','$user_email','$password')";
         mysqli_query($con, $query);
 
         header("Location: login.php");
@@ -75,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <form method="POST">
         <label id="usernameTaken"></label>
         <input type="text" id="user_name" name="user_name" placeholder="Username" required> <!-- Het username veld -->
-        <input type="email" class="input" id="email" name="email" placeholder="Email" required> <!-- Het email veld -->
+        <input type="email" class="input" id="email" name="user_email" placeholder="Email" required> <!-- Het email veld -->
         <input type="password" class="input" id="password" name="password" placeholder="Password" required> <!-- Het wachtwoord veld -->
         <input type="password" class="input" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required> <!-- Bekijkt of het wachtwoord hetzelfde is met het wachtwoord veld hierboven -->
         <input type="submit" id="submit" value="Sign up">
