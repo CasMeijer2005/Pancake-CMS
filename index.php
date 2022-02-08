@@ -27,6 +27,7 @@ $user_data = check_login($con);
         <img src="assets/img/checkmark.png" id="checkmark"> <!-- Het groene vinkje-->
         <h1>Login succesful!</h1>
         <h2>Welcome <?php echo $user_data["user_name"] ?></h2> <!-- ["user_name"] is de username -->
+        <h2><?php echo $title ?></h2>
     </div>
 </body>
 

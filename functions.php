@@ -20,6 +20,7 @@ function check_login($con)
     die;
 }
 
+
 function random_num($length)
 {
     $text = "";
