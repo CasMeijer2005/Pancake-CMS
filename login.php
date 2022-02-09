@@ -60,6 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <p id="signuptext"></p> <!-- De <p> laat "This feature is under maintenance" zien -->
     <a href="signup.php" id="signup">Sign up here</a> <!-- Redirect naar signup.php -->
     <script src="assets/js/login.js"></script>
+    <figcaption>
+        2022 Pancake
+    </figcaption>
 </body>
 
 </html>

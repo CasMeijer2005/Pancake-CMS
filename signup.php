@@ -73,6 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/pancake.png">
     <title>Sign up</title>
 </head>
 
@@ -89,6 +90,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <p id="signuptext"></p> <!-- De <p> laat "This feature is under maintenance" zien -->
     <a href="login.php" id="signup">Login here</a> <!-- Redirect naar login.php -->
     <script src="assets/js/login.js"></script>
+    <figcaption>
+        2022 Pancake
+    </figcaption>
 </body>
 
 </html>

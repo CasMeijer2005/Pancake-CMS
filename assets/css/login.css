@@ -73,3 +73,14 @@ body::after {  /* De achtergrond van de pagina */
   transform: translateY(-20px);
   font-family: "Arial";
 }
+figcaption {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 16px;
+  color: #010B13;
+}
