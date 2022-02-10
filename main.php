@@ -5,8 +5,8 @@ include("functions.php");
 $title = mysqli_query($con, "SELECT title FROM content");
 $header1 = mysqli_query($con, "SELECT header1 FROM content limit 1");
 $header2 = mysqli_query($con, "SELECT header2 FROM content limit 1");
-
-
+$header3 = mysqli_query($con, "SELECT header3 FROM content limit 1");
+$header4 = mysqli_query($con, "SELECT header4 FROM content limit 1");
 ?>
 
 
@@ -37,9 +37,24 @@ $header2 = mysqli_query($con, "SELECT header2 FROM content limit 1");
                 echo $row['header1'];
             }
             ?></h2>
+        <h2><?php
+            while ($row = mysqli_fetch_assoc($header2)) {
+                echo $row['header2'];
+            }
+            ?></h2>
+        <h2><?php
+            while ($row = mysqli_fetch_assoc($header3)) {
+                echo $row['header3'];
+            }
+            ?></h2>
+        <h2><?php
+            while ($row = mysqli_fetch_assoc($header4)) {
+                echo $row['header4'];
+            }
+            ?></h2>
     </content>
     <footer>
-        <h3>Here is where the content will end</h3>
+
     </footer>
     <figcaption>
         2022 Pancake
