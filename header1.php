@@ -24,12 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit the header</title>
 </head>
 
 <body>
     <form method="POST" class="header1">
-        <label for="header1">header 1</label>
+        <label for="header1">Header 1</label>
         <input type="text" name="header1">
         <input type="submit">
     </form>
