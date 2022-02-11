@@ -23,14 +23,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/headerparagraph.css">
+    <title>Edit the paragraph</title>
 </head>
 
 <body>
     <form method="POST" class="paragraph2">
-        <label for="paragraph2">header 2</label>
-        <input type="text" name="paragraph2">
-        <input type="submit">
+        <label for="paragraph2" id="paragraph">Paragraph 2</label>
+        <input type="text"  id="text" name="paragraph2">
+        <input type="submit" id="submit">
     </form>
 </body>
 

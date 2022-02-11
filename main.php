@@ -2,7 +2,7 @@
 session_start();
 include("connection.php");
 include("functions.php");
-$title = mysqli_query($con, "SELECT title FROM content");
+$title = mysqli_query($con, "SELECT title FROM content limit 1");
 $header1 = mysqli_query($con, "SELECT header1 FROM content limit 1");
 $header2 = mysqli_query($con, "SELECT header2 FROM content limit 1");
 $header3 = mysqli_query($con, "SELECT header3 FROM content limit 1");
