@@ -4,14 +4,13 @@ include("connection.php");
 include("functions.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $paragraph3 = $_POST['paragraph3'];
+    $paragraph3 = htmlspecialchars($_POST['paragraph3']);
     if (!empty($paragraph3)) {
-        //$query = "INSERT into content (paragraph3) values ('$paragraph3')";
-        $query = "update content set paragraph3 = '$paragraph3'";
+        // $paragraph4 = "abc";
+        //$query = "INSERT into content (paragraph4) values ('$paragraph4')";
+        $query = "update content set paragraph3 = '" . $paragraph3 . "' WHERE id = 1 ";
         mysqli_query($con, $query);
     }
-
-
     header("Location: adminpage.php");
     die;
 }

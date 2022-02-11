@@ -9,11 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         // $paragraph4 = "abc";
         //$query = "INSERT into content (paragraph4) values ('$paragraph4')";
         $query = "update content set paragraph4 = '" . $paragraph4 . "' WHERE id = 1 ";
-        echo $query;
         mysqli_query($con, $query);
     }
-
-
     header("Location: adminpage.php");
     die;
 }

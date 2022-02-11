@@ -4,13 +4,13 @@ include("connection.php");
 include("functions.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $title = $_POST['title'];
+    $title = htmlspecialchars($_POST['title']);
     if (!empty($title)) {
-        $query = "update content set title = '$title'";
+        // $paragraph4 = "abc";
+        //$query = "INSERT into content (paragraph4) values ('$paragraph4')";
+        $query = "update content set title = '" . $title . "' WHERE id = 1 ";
         mysqli_query($con, $query);
     }
-
-
     header("Location: adminpage.php");
     die;
 }
