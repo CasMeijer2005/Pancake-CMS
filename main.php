@@ -37,13 +37,13 @@ $paragraph4 = mysqli_query($con, "SELECT paragraph4 FROM content limit 1");
     </header>
     <content>
         <h2><?php
-            while ($row = mysqli_fetch_assoc($paragraph1)) {
-                echo $row['paragraph1'];
+            while ($row = mysqli_fetch_assoc($header1)) {
+                echo $row['header1'];
             }
             ?></h2>
         <p><?php
-            while ($row = mysqli_fetch_assoc($header1)) {
-                echo $row['header1'];
+            while ($row = mysqli_fetch_assoc($paragraph1)) {
+                echo $row['paragraph1'];
             }
             ?></p>
 
@@ -53,8 +53,8 @@ $paragraph4 = mysqli_query($con, "SELECT paragraph4 FROM content limit 1");
             }
             ?></h2>
         <p><?php
-            while ($row = mysqli_fetch_assoc($header2)) {
-                echo $row['header2'];
+            while ($row = mysqli_fetch_assoc($paragraph2)) {
+                echo $row['paragraph2'];
             }
             ?></p>
         <h2><?php
@@ -63,8 +63,8 @@ $paragraph4 = mysqli_query($con, "SELECT paragraph4 FROM content limit 1");
             }
             ?></h2>
         <p><?php
-            while ($row = mysqli_fetch_assoc($header3)) {
-                echo $row['header3'];
+            while ($row = mysqli_fetch_assoc($paragraph3)) {
+                echo $row['paragraph3'];
             }
             ?></p>
         <h2><?php
@@ -73,8 +73,8 @@ $paragraph4 = mysqli_query($con, "SELECT paragraph4 FROM content limit 1");
             }
             ?></h2>
         <p><?php
-            while ($row = mysqli_fetch_assoc($header4)) {
-                echo $row['header4'];
+            while ($row = mysqli_fetch_assoc($paragraph3)) {
+                echo $row['paragraph3'];
             }
             ?></p>
     </content>

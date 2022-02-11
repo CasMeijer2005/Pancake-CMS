@@ -6,8 +6,8 @@ include("functions.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $paragraph4 = $_POST['paragraph4'];
     if (!empty($paragraph4)) {
-        $query = "INSERT into content (paragraph4) values ('$paragraph4')";
-        // $query = "update content set paragraph4 = '$paragraph4'";
+        //$query = "INSERT into content (paragraph4) values ('$paragraph4')";
+        $query = "update content set paragraph4 = '$paragraph4'";
         mysqli_query($con, $query);
     }
 
