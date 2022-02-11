@@ -10,7 +10,7 @@ include("functions.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // Something was posted
     $user_name = $_POST['user_name'];
-    $password = $_POST['password'];
+    $password = hash("sha256", $_POST['password']);
 
     if (!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
 

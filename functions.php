@@ -19,6 +19,17 @@ function check_login($con)
     header("Location: login.php");
     die;
 }
+function cms($con)
+{
+    $query = "select * from content";
+
+    $result = mysqli_query($con, $query);
+    if ($result && mysqli_num_rows($result) > 0) {
+
+        $user_data = mysqli_fetch_assoc($result);
+        return $user_data;
+    }
+
 
 function random_num($length)
 {
@@ -35,4 +46,3 @@ function random_num($length)
     return $text;
 }
 ?>
-<!-- Eind PHP -->

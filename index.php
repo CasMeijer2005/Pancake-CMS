@@ -6,6 +6,7 @@ include("connection.php");
 include("functions.php");
 
 // Checked of de user is ingelogd
+header("refresh:3; main.php");
 $user_data = check_login($con);
 ?>
 <!-- Einde PHP, Start HTML -->

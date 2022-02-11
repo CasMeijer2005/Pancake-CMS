@@ -1,12 +1,14 @@
 figcaption {
-    position: fixed;
-    left: 50%;
-    bottom: 20px;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    text-decoration: none;
-    font-family: sans-serif;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: sans-serif;
 }
-h1, h2, h3 {
-    font-family: monospace;
+h1,
+h2,
+h3 {
+  font-family: monospace;
 }
