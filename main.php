@@ -77,6 +77,7 @@ $paragraph4 = mysqli_query($con, "SELECT paragraph4 FROM content limit 1");
                 echo $row['paragraph4'];
             }
             ?></p>
+        <a style="text-decoration: none;" href="logout.php">log out here</a>
     </content>
     <footer>
 

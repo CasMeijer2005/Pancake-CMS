@@ -29,8 +29,7 @@ function cms($con)
         $user_data = mysqli_fetch_assoc($result);
         return $user_data;
     }
-
-
+}
 function random_num($length)
 {
     $text = "";
