@@ -4,10 +4,10 @@ include("connection.php");
 include("functions.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $header3 = $_POST['header3'];
-    if (!empty($header3)) {
+    $header4 = $_POST['header4'];
+    if (!empty($header4)) {
         // $query = "INSERT into content (header1) values ('$header1')";
-        $query = "update content set header3 = '$header3'";
+        $query = "update content set header4 = '$header4'";
         mysqli_query($con, $query);
     }
 
@@ -28,9 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 
 <body>
-    <form method="POST" class="header3">
-        <label for="header3">header 3</label>
-        <input type="text" name="header3">
+    <form method="POST" class="header4">
+        <label for="header4">header 1</label>
+        <input type="text" name="header4">
         <input type="submit">
     </form>
 </body>

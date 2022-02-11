@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 <body>
     <form method="POST" class="header2">
-        <label for="header2">header 1</label>
+        <label for="header2">header 2</label>
         <input type="text" name="header2">
         <input type="submit">
     </form>
