@@ -73,8 +73,8 @@ $paragraph4 = mysqli_query($con, "SELECT paragraph4 FROM content limit 1");
             }
             ?></h2>
         <p><?php
-            while ($row = mysqli_fetch_assoc($paragraph3)) {
-                echo $row['paragraph3'];
+            while ($row = mysqli_fetch_assoc($paragraph4)) {
+                echo $row['paragraph4'];
             }
             ?></p>
     </content>

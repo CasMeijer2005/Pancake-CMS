@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $header4 = $_POST['header4'];
     if (!empty($header4)) {
         // $query = "INSERT into content (header1) values ('$header1')";
-        $query = "update content set header4 = '$header4'";
+        $query = "update content set header4 = '" . $header4 . "' WHERE id = 1 ";
         mysqli_query($con, $query);
     }
 
