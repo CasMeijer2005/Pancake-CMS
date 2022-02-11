@@ -22,6 +22,10 @@ include("functions.php");
     <a href="header2.php">click here to edit the second header</a><br>
     <a href="header3.php">click here to edit the thirt header</a><br>
     <a href="header4.php">click here to edit the forth header</a><br>
+    <a href="paragraph1.php">click here to edit the first paragraph</a><br>
+    <a href="paragraph2.php">click here to edit the second paragraph</a><br>
+    <a href="paragraph3.php">click here to edit the thirt paragraph</a><br>
+    <a href="paragraph4.php">click here to edit the forth paragraph</a><br>
 </body>
 
 </html>
